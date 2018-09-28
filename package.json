@@ -1,0 +1,38 @@
+{
+  "name": "nfl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrap.js",
+  "scripts": {
+    "build": "tsc && npm run lint",
+    "clean": "rimraf ./dist",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "tsc": "tsc",
+    "watch": "tsc -w",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^3.0.0",
+    "csv-write-stream": "^2.0.0",
+    "execSync": "^1.0.2",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "node-fetch": "^2.2.0",
+    "node-horseman": "^3.3.0",
+    "phantomjs": "^2.1.7",
+    "scrape-it": "^5.0.5",
+    "sqlite-sync": "^0.3.8",
+    "sqlite3": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.9",
+    "@types/node": "^10.9.4",
+    "rimraf": "^2.6.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3",
+    "typescript-eslint-parser": "^18.0.0"
+  }
+}
